@@ -30,9 +30,6 @@ class MainScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 20.0,
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
@@ -41,7 +38,7 @@ class MainScreen extends StatelessWidget {
                       'Messages',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28.0,
+                        fontSize: 24.0,
                       ),
                     ),
                     onPressed: () {},
@@ -51,7 +48,7 @@ class MainScreen extends StatelessWidget {
                       'Online',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28.0,
+                        fontSize: 24.0,
                       ),
                     ),
                     onPressed: () {},
@@ -61,7 +58,7 @@ class MainScreen extends StatelessWidget {
                       'Groups',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28.0,
+                        fontSize: 24.0,
                       ),
                     ),
                     onPressed: () {},
@@ -74,7 +71,7 @@ class MainScreen extends StatelessWidget {
               Stack(
                 children: <Widget>[
                   Container(
-                    height: 520.0,
+                    height: 540.0,
                     width: 480.0,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
@@ -86,7 +83,7 @@ class MainScreen extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         SizedBox(
-                          height: 30.0,
+                          height: 20.0,
                         ),
                         Container(
                           margin: EdgeInsets.all(15.0),
@@ -108,9 +105,6 @@ class MainScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
-                          height: 10.0,
-                        ),
                         Row(
                           children: <Widget>[
                             Column(
@@ -120,8 +114,8 @@ class MainScreen extends StatelessWidget {
                                     left: 15.0,
                                     bottom: 12.5,
                                   ),
-                                  height: 60.0,
-                                  width: 60.0,
+                                  height: 40.0,
+                                  width: 40.0,
                                   child: CircleAvatar(
                                     backgroundImage: NetworkImage(
                                         'https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028_1280.jpg'),
@@ -146,8 +140,22 @@ class MainScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Container(
+                    margin: EdgeInsets.only(
+                      top: 150,
+                    ),
+                    height: 390.0,
+                    width: 480.0,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(48.0),
+                        topRight: Radius.circular(48.0),
+                      ),
+                      color: Colors.white,
+                    ),
+                  ),
                 ],
-              )
+              ),
             ],
           ),
         ),
