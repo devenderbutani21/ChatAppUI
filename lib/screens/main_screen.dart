@@ -16,7 +16,7 @@ class MainScreen extends StatelessWidget {
                     icon: Icon(
                       Icons.menu,
                       color: Colors.white,
-                      size: 28,
+                      size: 28.0,
                     ),
                     onPressed: () {},
                   ),
@@ -24,14 +24,14 @@ class MainScreen extends StatelessWidget {
                     icon: Icon(
                       Icons.search,
                       color: Colors.white,
-                      size: 28,
+                      size: 28.0,
                     ),
                     onPressed: () {},
                   ),
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: 20.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,7 +41,7 @@ class MainScreen extends StatelessWidget {
                       'Messages',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28,
+                        fontSize: 28.0,
                       ),
                     ),
                     onPressed: () {},
@@ -51,7 +51,7 @@ class MainScreen extends StatelessWidget {
                       'Online',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28,
+                        fontSize: 28.0,
                       ),
                     ),
                     onPressed: () {},
@@ -61,10 +61,90 @@ class MainScreen extends StatelessWidget {
                       'Groups',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 28,
+                        fontSize: 28.0,
                       ),
                     ),
                     onPressed: () {},
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Stack(
+                children: <Widget>[
+                  Container(
+                    height: 520.0,
+                    width: 480.0,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(48.0),
+                        topRight: Radius.circular(48.0),
+                      ),
+                      color: Color(0xff27c1a7),
+                    ),
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(
+                          height: 30.0,
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(15.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text(
+                                'Favourite Contacts',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                              Icon(
+                                Icons.more_horiz_rounded,
+                                color: Colors.white,
+                                size: 18.0,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10.0,
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Column(
+                              children: <Widget>[
+                                Container(
+                                  margin: EdgeInsets.only(
+                                    left: 15.0,
+                                    bottom: 12.5,
+                                  ),
+                                  height: 60.0,
+                                  width: 60.0,
+                                  child: CircleAvatar(
+                                    backgroundImage: NetworkImage(
+                                        'https://cdn.pixabay.com/photo/2016/03/09/10/23/model-1246028_1280.jpg'),
+                                  ),
+                                ),
+                                Container(
+                                  margin: EdgeInsets.only(
+                                    left: 15.0,
+                                  ),
+                                  child: Text(
+                                    'Mathew',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               )
