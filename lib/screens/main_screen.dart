@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import 'menu_screen.dart';
+
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        drawer: MenuScreen(),
         body: Container(
           color: Color(0xff333230),
           child: Column(
@@ -18,7 +21,8 @@ class MainScreen extends StatelessWidget {
                       color: Colors.white,
                       size: 28.0,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                    },
                   ),
                   IconButton(
                     icon: Icon(
