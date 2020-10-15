@@ -2,11 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'menu_screen.dart';
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
+  @override
+  _MainScreenState createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        key: _scaffoldKey,
         drawer: MenuScreen(),
         body: Container(
           color: Color(0xff333230),
@@ -21,8 +29,7 @@ class MainScreen extends StatelessWidget {
                       color: Colors.white,
                       size: 28.0,
                     ),
-                    onPressed: () {
-                    },
+                    onPressed: () => _scaffoldKey.currentState.openDrawer(),
                   ),
                   IconButton(
                     icon: Icon(

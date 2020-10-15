@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import './screens/main_screen.dart';
+import './screens/main_screen.dart';
 import './screens/chat_screen.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ChatScreen(),
+      home: MainScreen(),
     );
   }
 }
